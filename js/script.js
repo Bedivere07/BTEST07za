@@ -1,3 +1,5 @@
+
+
 // -------------------- สร้างกระดาน Sudoku --------------------
 const board = document.getElementById('board');
 const cells = [];
@@ -222,5 +224,6 @@ function showOverlay(message, color = "#4caf50") {
 overlayBtn.addEventListener('click', () => {
     overlay.style.display = 'none'; // ปิด overlay
 });
+
 
 
