@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>SUDOKU</title>
+    
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Lilita+One&family=Mitr:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <p class="title">SUDOKU</p>
+    </header>
+
+    <div class="timer" type="timer">00:00</div>
+    <div class="sudoku" id="board"></div>
+    <div class="tap" id="tap">
+        <p class="eraser">❌</p>
+        <p class="one">1</p>
+        <p class="two">2</p>
+        <p class="three">3</p>
+        <p class="four">4</p>
+        <p class="five">5</p>
+        <p class="six">6</p>
+        <p class="seven">7</p>
+        <p class="eight">8</p>
+        <p class="nine">9</p>
+    </div>
+
+    <div class="main">
+
+        <div class="btngiveup">
+            <p>GIVE UP</p>
+        </div>
+        <div class="btnstart">
+            <p>START</p>
+        </div>
+        <div class="btncheck">
+            <p>CHECK</p>
+        </div>
+
+    </div>
+
+    <!-- หน้าขึ้นตอนชนะหรือยอมแพ้ -->
+
+    <div class="overlay" id="overlay">
+       <div class="overlay-content" id="overlay-content">
+    <!-- ข้อความในนี้จะเปลี่ยนตามเหตุการณ์ -->
+        <h1 id="overlay-text">YOU WIN!</h1>
+        <button id="overlay-btn">OK</button>
+       </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
