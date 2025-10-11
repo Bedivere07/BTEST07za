@@ -1,6 +1,3 @@
-
-
-// -------------------- สร้างกระดาน Sudoku --------------------
 const board = document.getElementById('board');
 const cells = [];
 let selectedCell = null; // ช่องที่เลือกอยู่
@@ -224,6 +221,3 @@ function showOverlay(message, color = "#4caf50") {
 overlayBtn.addEventListener('click', () => {
     overlay.style.display = 'none'; // ปิด overlay
 });
-
-
-
